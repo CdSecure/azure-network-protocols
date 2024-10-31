@@ -39,16 +39,16 @@ Creating a Resource Group in Microsoft Azure
 <img width="1258" alt="Screenshot 2024-10-31 at 3 34 39 PM" src="https://github.com/user-attachments/assets/a670e8dd-9a46-4217-b10e-702658a1f54c">
 
 <img width="1314" alt="Screenshot 2024-10-31 at 3 36 32 PM" src="https://github.com/user-attachments/assets/c1f60194-ba15-4164-8b9a-ca1d3b51c581">
+<p>
 
-
-<br />
-<br />
 <br />
 Add Two Virtual Machines to the Resource Group
 <br />
+<p>
 First VM: Windows 10
+
 - In the Azure portal, select "Virtual Machines" and create.
-- For the Resource Group pick the one we previously made. 
+- For the Resource Group pick the one we previously made.
 - Choose "Windows 10" from the available virtual machine templates.
 - Configure VM settings such as name, size, and authentication method.
 - Assign the VM to the newly created resource group(Make sure they are in the same Region, mine is West 2).
@@ -56,6 +56,7 @@ First VM: Windows 10
 - Keep track of your username and password.
 -  Review configurations for the basics page, you can leave the rest of the pages as is and click "Create and review" to deploy the Windows 10 VM.
 -  After verification click "Create" 
+<p>
   
 <img width="1474" alt="Screenshot 2024-10-31 at 3 41 16 PM" src="https://github.com/user-attachments/assets/45912a61-4436-4442-8f0a-25fd2de11b2d">
 <img width="862" alt="Screenshot 2024-10-31 at 3 53 19 PM" src="https://github.com/user-attachments/assets/0f2a05eb-7ae8-4c73-a40c-86ccf8229568">
@@ -63,12 +64,27 @@ First VM: Windows 10
 </p>
 
 <br />
-
+ 
 <p>
+Second VM: Linux Ubuntu VM
+  
+- In the Azure portal, select "Virtual Machines" and create.
+- For the Resource Group pick the one we previously made.
+- Choose "Ubuntu Server 22.04" from the available virtual machine templates.
+- Assign the VM to the newly created resource group(Make sure they are in the same Region, mine is West 2).
+- Make sure you select a size with 2 or more vcpus.
+- Keep track of your username and password.
+- Before creating this VM, go to the network tab and make sure both of your VMs are in the same Virtual Netwo
+-  Review configurations for the basics page, and click "Create and review" to deploy the Linuz Ubuntu VM.
+-  After verification click "Create" 
+  
+  <img width="1239" alt="Screenshot 2024-10-31 at 5 09 35 PM" src="https://github.com/user-attachments/assets/4ed3b477-7e6b-4701-83ce-122ccda3c2dc">
+  <img width="1262" alt="Screenshot 2024-10-31 at 5 17 06 PM" src="https://github.com/user-attachments/assets/253beae5-4709-4a9c-8ec3-4c7da376478e">
+
 
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
 </p>
 <br />
 
