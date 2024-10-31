@@ -42,18 +42,21 @@ Creating a Resource Group in Microsoft Azure
 
 
 <br />
+<br />
+<br />
 Add Two Virtual Machines to the Resource Group
-
+<br />
 First VM: Windows 10
 - In the Azure portal, select "Virtual Machines" and create.
 - For the Resource Group pick the one we previously made. 
 - Choose "Windows 10" from the available virtual machine templates.
 - Configure VM settings such as name, size, and authentication method.
-- Assign the VM to the newly created resource group(Make sure they are in the same Region, mine is East 2).
+- Assign the VM to the newly created resource group(Make sure they are in the same Region, mine is West 2).
 - Make sure you select a size with 2 or more vcpus.
 - Keep track of your username and password.
-- Review configurations and click "Create" to deploy the Windows 10 VM.
-- 
+-  Review configurations for the basics page, you can leave the rest of the pages as is and click "Create and review" to deploy the Windows 10 VM.
+-  After verification click "Create" 
+  
 <img width="1474" alt="Screenshot 2024-10-31 at 3 41 16 PM" src="https://github.com/user-attachments/assets/45912a61-4436-4442-8f0a-25fd2de11b2d">
 <img width="862" alt="Screenshot 2024-10-31 at 3 53 19 PM" src="https://github.com/user-attachments/assets/0f2a05eb-7ae8-4c73-a40c-86ccf8229568">
 
