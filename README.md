@@ -49,9 +49,14 @@ First VM: Windows 10
 - For the Resource Group pick the one we previously made. 
 - Choose "Windows 10" from the available virtual machine templates.
 - Configure VM settings such as name, size, and authentication method.
-- Assign the VM to the newly created resource group.
+- Assign the VM to the newly created resource group(Make sure they are in the same Region, mine is East 2).
+- Make sure you select a size with 2 or more vcpus.
+- Keep track of your username and password.
 - Review configurations and click "Create" to deploy the Windows 10 VM.
+- 
 <img width="1474" alt="Screenshot 2024-10-31 at 3 41 16 PM" src="https://github.com/user-attachments/assets/45912a61-4436-4442-8f0a-25fd2de11b2d">
+<img width="862" alt="Screenshot 2024-10-31 at 3 53 19 PM" src="https://github.com/user-attachments/assets/0f2a05eb-7ae8-4c73-a40c-86ccf8229568">
+
 </p>
 
 <br />
