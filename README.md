@@ -74,12 +74,16 @@ Second VM: Linux Ubuntu VM
 - Assign the VM to the newly created resource group(Make sure they are in the same Region, mine is West 2).
 - Make sure you select a size with 2 or more vcpus.
 - Keep track of your username and password.
-- Before creating this VM, go to the network tab and make sure both of your VMs are in the same Virtual Netwo
--  Review configurations for the basics page, and click "Create and review" to deploy the Linuz Ubuntu VM.
+- Before creating this VM, go to the network tab and make sure both of your VMs are in the same Virtual Network. 
+-  Review configurations for the basics page, and click "Create and review" to deploy the Linux Ubuntu VM.
 -  After verification click "Create" 
   
   <img width="1239" alt="Screenshot 2024-10-31 at 5 09 35 PM" src="https://github.com/user-attachments/assets/4ed3b477-7e6b-4701-83ce-122ccda3c2dc">
+  
   <img width="1262" alt="Screenshot 2024-10-31 at 5 17 06 PM" src="https://github.com/user-attachments/assets/253beae5-4709-4a9c-8ec3-4c7da376478e">
+  
+<img width="1259" alt="Screenshot 2024-10-31 at 5 21 59 PM" src="https://github.com/user-attachments/assets/1bed67cd-f741-4bae-be32-86a5427f3051">
+
 
 
 </p>
