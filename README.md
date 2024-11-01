@@ -67,7 +67,7 @@ First VM: Windows 10
 - Keep track of your username and password.
   
 -  Review configurations for the basics page, you can leave the rest of the pages as is and click "Create and review" to deploy the Windows 10 VM.
-- 
+
 -  After verification click "Create" 
 <p>
   
@@ -96,7 +96,7 @@ Second VM: Linux Ubuntu VM
 - Before creating this VM, go to the network tab and make sure both of your VMs are in the same Virtual Network.
   
 -  Review configurations for the basics page, and click "Create and review" to deploy the Linux Ubuntu VM.
-- 
+  
 -  After verification click "Create" 
   
   <img width="1239" alt="Screenshot 2024-10-31 at 5 09 35 PM" src="https://github.com/user-attachments/assets/4ed3b477-7e6b-4701-83ce-122ccda3c2dc">
@@ -120,6 +120,19 @@ Connect to Your Virtual Machine:
 
 <img width="473" alt="Screenshot 2024-11-01 at 2 32 51 PM" src="https://github.com/user-attachments/assets/354ff187-3ca9-41da-9257-7613304f22b0">
 
+Observe ICMP Traffic
+
+- Both virtual machines (VMs) have been successfully installed, and the Windows VM is connected via Microsoft Remote Desktop Protocol (RDP).
+  
+- Next, we will install Wireshark on our Windows VM. Wireshark is a free and open-source packet analyzer used for network troubleshooting, analysis, software and communications protocol development, and education.
+
+- Open Microsoft Edge and paste the following URL into the address bar: https://www.wireshark.org.
+
+- Click download and download the Windows x64 installer
+  
+<img width="1800" alt="Screenshot 2024-11-01 at 2 57 37 PM" src="https://github.com/user-attachments/assets/e6078756-ed87-4b0b-b78d-d24bf9e4850c">
+
+<img width="757" alt="Screenshot 2024-11-01 at 3 04 50 PM" src="https://github.com/user-attachments/assets/eaf8bcde-73fb-4010-bc03-9114e9eba1e1">
 
 
 
