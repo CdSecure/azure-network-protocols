@@ -84,6 +84,20 @@ Second VM: Linux Ubuntu VM
   
 <img width="1259" alt="Screenshot 2024-10-31 at 5 21 59 PM" src="https://github.com/user-attachments/assets/1bed67cd-f741-4bae-be32-86a5427f3051">
 
+Connect to Your Virtual Machine:
+
+Retrieve the Public IP Address: Once your VM is created, locate and note the public IP address assigned to it in the Azure Portal.
+
+Use Remote Desktop: Open the Remote Desktop Connection application on your local machine. (Downloand Microsoft remote desktop on mac from app store)
+
+Establish the Connection: Click the + icon add PC and enter the VM's public IP address in the Remote Desktop app.
+
+Enter password: Enter your previously made username and password.
+<img width="1226" alt="Screenshot 2024-11-01 at 2 34 40 PM" src="https://github.com/user-attachments/assets/353f7a57-b334-4663-8c2b-681d3fcbd2fb">
+
+<img width="473" alt="Screenshot 2024-11-01 at 2 32 51 PM" src="https://github.com/user-attachments/assets/354ff187-3ca9-41da-9257-7613304f22b0">
+
+
 
 
 </p>
@@ -93,9 +107,9 @@ Second VM: Linux Ubuntu VM
 <br />
 
 <p>
-<img src="https://i.imgur.com/DJmEXEB.png" height="80%" width="80%" alt="Disk Sanitization Steps"/>
+
 </p>
 <p>
-Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur.
+
 </p>
 <br />
