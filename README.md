@@ -32,10 +32,15 @@ In this tutorial, we observe various network traffic to and from Azure Virtual M
 Creating a Resource Group in Microsoft Azure
 
 - Navigate to the Azure portal.
+  
 - Select "Resource groups" from the menu.
+  
 - Click on "Add" to create a new resource group.
+  
 - Enter a name and select a region for the resource group.
+  
 - Click "Review + create" and then "Create" to finalize.
+  
 <img width="1258" alt="Screenshot 2024-10-31 at 3 34 39 PM" src="https://github.com/user-attachments/assets/a670e8dd-9a46-4217-b10e-702658a1f54c">
 
 <img width="1314" alt="Screenshot 2024-10-31 at 3 36 32 PM" src="https://github.com/user-attachments/assets/c1f60194-ba15-4164-8b9a-ca1d3b51c581">
@@ -48,13 +53,21 @@ Add Two Virtual Machines to the Resource Group
 First VM: Windows 10
 
 - In the Azure portal, select "Virtual Machines" and create.
+  
 - For the Resource Group pick the one we previously made.
+  
 - Choose "Windows 10" from the available virtual machine templates.
+  
 - Configure VM settings such as name, size, and authentication method.
+  
 - Assign the VM to the newly created resource group(Make sure they are in the same Region, mine is West 2).
+  
 - Make sure you select a size with 2 or more vcpus.
+  
 - Keep track of your username and password.
+  
 -  Review configurations for the basics page, you can leave the rest of the pages as is and click "Create and review" to deploy the Windows 10 VM.
+- 
 -  After verification click "Create" 
 <p>
   
@@ -69,13 +82,21 @@ First VM: Windows 10
 Second VM: Linux Ubuntu VM
   
 - In the Azure portal, select "Virtual Machines" and create.
+
 - For the Resource Group pick the one we previously made.
+
 - Choose "Ubuntu Server 22.04" from the available virtual machine templates.
+  
 - Assign the VM to the newly created resource group(Make sure they are in the same Region, mine is West 2).
+  
 - Make sure you select a size with 2 or more vcpus.
+  
 - Keep track of your username and password.
-- Before creating this VM, go to the network tab and make sure both of your VMs are in the same Virtual Network. 
+  
+- Before creating this VM, go to the network tab and make sure both of your VMs are in the same Virtual Network.
+  
 -  Review configurations for the basics page, and click "Create and review" to deploy the Linux Ubuntu VM.
+- 
 -  After verification click "Create" 
   
   <img width="1239" alt="Screenshot 2024-10-31 at 5 09 35 PM" src="https://github.com/user-attachments/assets/4ed3b477-7e6b-4701-83ce-122ccda3c2dc">
@@ -86,13 +107,15 @@ Second VM: Linux Ubuntu VM
 
 Connect to Your Virtual Machine:
 
-Retrieve the Public IP Address: Once your VM is created, locate and note the public IP address assigned to it in the Azure Portal.
+- Retrieve the Public IP Address: Once your VM is created, locate and note the public IP address assigned to it in the Azure Portal.
 
-Use Remote Desktop: Open the Remote Desktop Connection application on your local machine. (Downloand Microsoft remote desktop on mac from app store)
+- Use Remote Desktop: Open the Remote Desktop Connection application on your local machine. (Downloand Microsoft remote desktop on mac from app store)
 
-Establish the Connection: Click the + icon add PC and enter the VM's public IP address in the Remote Desktop app.
+- Establish the Connection: Click the + icon add PC and enter the VM's public IP address in the Remote Desktop app.
 
-Enter password: Enter your previously made username and password.
+- Enter password: Enter your previously made username and password.
+
+  
 <img width="1226" alt="Screenshot 2024-11-01 at 2 34 40 PM" src="https://github.com/user-attachments/assets/353f7a57-b334-4663-8c2b-681d3fcbd2fb">
 
 <img width="473" alt="Screenshot 2024-11-01 at 2 32 51 PM" src="https://github.com/user-attachments/assets/354ff187-3ca9-41da-9257-7613304f22b0">
