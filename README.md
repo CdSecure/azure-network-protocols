@@ -168,40 +168,59 @@ Establishing Network Traffic
   
 <img width="1800" alt="Screenshot 2024-11-02 at 5 45 50 PM" src="https://github.com/user-attachments/assets/76c71ad6-f7c4-4c23-8692-562ebf19cdfe">
 
-Configuing a firewall 
+Configuring a Firewall
 
-- We will now configure a firewall to stop the Windows VM from being able to ping the Linux VM.
+- We will now configure a firewall to prevent the Windows VM from pinging the Linux VM.
 
-- We will first configure a non-stop ping from the windows VM to the Linux vm.
+- First, we will initiate a continuous ping from the Windows VM to the Linux VM.
 
-- To have a non-stop ping we type in ping "IP-address" then -t, you should see a non-stop ping traffic happening in the background.
+- To start a continuous ping, open PowerShell and type ping "IP-address" -t, replacing "IP-address" with the Linux VM's private IP address. You should see continuous ping traffic occurring in the background.
 
 <img width="859" alt="Screenshot 2024-11-02 at 6 23 21 PM" src="https://github.com/user-attachments/assets/657d50e7-0144-48f8-a9fc-02ad35683a1a">
 
-- We will now block all incoming ping traffic from the Windows VM.
+Blocking Incoming Ping Traffic
 
-- We head back to our Azure portal, click into our Linux VM
+- We will now block all incoming ping (ICMP) traffic from the Windows VM.
 
-- On the left colum you should see networking-> Network settings and once in there you should find the "Network Security Group" which is the firewall for your VM, click it.
+- Navigate back to the Azure portal and select your Linux virtual machine (VM).
+
+- In the left-hand column, go to Networking under Network Settings. Within this section, locate and click on the Network Security Group, which serves as the firewall for your VM.
 
 
 <img width="816" alt="Screenshot 2024-11-02 at 6 29 19 PM" src="https://github.com/user-attachments/assets/92e3f8e2-01c5-4237-a22c-6d304e70b33d">
 
 <img width="866" alt="Screenshot 2024-11-02 at 6 31 18 PM" src="https://github.com/user-attachments/assets/a2f1557b-394f-4146-841f-34e9a800bf80">
 
-- In the left colum you'll see "Inbound security rules" so we will be creating a rule for inbound traffic. By clicking the top of the page "add" buttom 
+- In the left column, select Inbound security rules; we will create a new rule for inbound traffic. Click on the Add button at the top of the page.
 
 <img width="1008" alt="Screenshot 2024-11-02 at 6 32 59 PM" src="https://github.com/user-attachments/assets/bae5710d-152d-4f22-bf26-21ad5f819e5d">
 
 <img width="841" alt="Screenshot 2024-11-02 at 6 37 22 PM" src="https://github.com/user-attachments/assets/bb0805d7-e28d-4fda-a698-c3cb54d681fa">
-- Copy what i have here coulum by coulum. 
-  1. Have any for the source as we want to stop ICMP from any source 
-  2. Source port with an * cause that means any port
-  3. leave destination and service as is
-  4. We want to block icmp traffic so we'll click Icmp4
-  5. For action we want to deny the action
-  6. we have priority set to 290 so it goes above the previous rules. 
+Configuring the Inbound Security Rule
+
+- Set up the inbound security rule with the following configurations, column by column:
+
+- Source: Select Any, since we want to block ICMP traffic from any source.
+
+- Source Port Ranges: Enter an asterisk (*), which represents any port.
+
+- Destination and Service: Leave these settings at their default values.
+
+- Protocol: Choose Icmp4 to block ICMP traffic.
+
+- Action: Select Deny to prevent the specified traffic.
+
+- Priority: Set the priority to 290 so that this rule overrides previous rules.
+
+- After completing all configurations, click Add to create the rule.
 <img width="578" alt="Screenshot 2024-11-02 at 6 38 09 PM" src="https://github.com/user-attachments/assets/cbd51e5e-ee72-4357-a9df-77e61879c9b3">
+
+- It may take some time for the firewall rule to propagate, but you will notice that the pings cease, and you begin receiving "Request timed out" messages. This indicates that the Linux VM is no longer accepting ICMP traffic from any source.
+
+- In Wireshark, you will observe that the Windows VM continues to send ICMP requests but does not receive any replies.
+
+<img width="1800" alt="Screenshot 2024-11-02 at 6 46 49 PM" src="https://github.com/user-attachments/assets/5adc9c35-5edb-417f-8b38-26bd8a3553a4">
+
 
 </p>
 <br />
