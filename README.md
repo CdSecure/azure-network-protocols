@@ -168,8 +168,28 @@ Establishing Network Traffic
   
 <img width="1800" alt="Screenshot 2024-11-02 at 5 45 50 PM" src="https://github.com/user-attachments/assets/76c71ad6-f7c4-4c23-8692-562ebf19cdfe">
 
-</p>
-<p>
+Configuing a firewall 
+
+- We will now configure a firewall to stop the Windows VM from being able to ping the Linux VM.
+
+- We will first configure a non-stop ping from the windows VM to the Linux vm.
+
+- To have a non-stop ping we type in ping "IP-address" then -t, you should see a non-stop ping traffic happening in the background.
+
+<img width="859" alt="Screenshot 2024-11-02 at 6 23 21 PM" src="https://github.com/user-attachments/assets/657d50e7-0144-48f8-a9fc-02ad35683a1a">
+
+- We will now block all incoming ping traffic from the Windows VM.
+
+- We head back to our Azure portal, click into our Linux VM
+
+- On the left colum you should see networking-> Network settings and once in there you should find the "Network Security Group" which is the firewall for your VM, click it
+
+<img width="816" alt="Screenshot 2024-11-02 at 6 29 19 PM" src="https://github.com/user-attachments/assets/92e3f8e2-01c5-4237-a22c-6d304e70b33d">
+
+<img width="866" alt="Screenshot 2024-11-02 at 6 31 18 PM" src="https://github.com/user-attachments/assets/a2f1557b-394f-4146-841f-34e9a800bf80">
+
+<img width="1008" alt="Screenshot 2024-11-02 at 6 32 59 PM" src="https://github.com/user-attachments/assets/bae5710d-152d-4f22-bf26-21ad5f819e5d">
+
 
 </p>
 <br />
