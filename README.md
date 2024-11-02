@@ -128,7 +128,11 @@ Observe ICMP Traffic
 
 - Open Microsoft Edge and paste the following URL into the address bar: https://www.wireshark.org.
 
-- Click download and download the Windows x64 installer
+- Click download and download the Windows x64 installer.
+
+- Once installed, click next for all the windows and finish at the end.
+
+- You have now fully installed wireshark, go to the bottom left corner and search for wirehsark and open it up.
   
 <img width="1800" alt="Screenshot 2024-11-01 at 2 57 37 PM" src="https://github.com/user-attachments/assets/e6078756-ed87-4b0b-b78d-d24bf9e4850c">
 
