@@ -120,50 +120,51 @@ Connect to Your Virtual Machine:
 
 <img width="473" alt="Screenshot 2024-11-01 at 2 32 51 PM" src="https://github.com/user-attachments/assets/354ff187-3ca9-41da-9257-7613304f22b0">
 
-Installing WireShark
+Installing Wireshark
 
 - Both virtual machines (VMs) have been successfully installed, and the Windows VM is connected via Microsoft Remote Desktop Protocol (RDP).
-  
-- Next, we will install Wireshark on our Windows VM. Wireshark is a free and open-source packet analyzer used for network troubleshooting, analysis, software and communications protocol development, and education.
 
-- Open Microsoft Edge and paste the following URL into the address bar: https://www.wireshark.org.
+- Next, we will install Wireshark on the Windows VM. Wireshark is a free and open-source packet analyzer used for network troubleshooting, analysis, software and communications protocol development, and education.
 
-- Click download and download the Windows x64 installer.
+- Open Microsoft Edge and enter the following URL into the address bar: https://www.wireshark.org.
 
-- Once installed, click next for all the windows and finish at the end.
+- Click on "Download" and select the Windows x64 installer to begin the download.
 
-- You have now fully installed wireshark, go to the bottom left corner and search for wirehsark and open it up.
+- After the download is complete, run the installer and click "Next" through all the prompts until the installation is finished.
+
+- Wireshark is now fully installed.
   
 <img width="1800" alt="Screenshot 2024-11-01 at 2 57 37 PM" src="https://github.com/user-attachments/assets/e6078756-ed87-4b0b-b78d-d24bf9e4850c">
 
 <img width="757" alt="Screenshot 2024-11-01 at 3 04 50 PM" src="https://github.com/user-attachments/assets/eaf8bcde-73fb-4010-bc03-9114e9eba1e1">
 
-Observe ICMP Traffic
+Observing ICMP Traffic
 
-- Now that it's open, click on Ethernet then the fin on the top right.
+- With Wireshark open, select "Ethernet" and then click the shark fin icon at the top right to start capturing.
 
-- Once opend you'll see all types of traffic and this is just the background traffic happenging behind the Windows VM
+- Once the capture begins, you will see various types of network traffic representing the background activity within the Windows VM.
 
-- We only want to observe ICMP traffic though, so on the top search bar type in ICMP and click enter.
+- To focus on ICMP traffic only, type "ICMP" into the top search bar and press Enter.
 
 <img width="1124" alt="Screenshot 2024-11-02 at 5 04 26 PM" src="https://github.com/user-attachments/assets/6d0b1843-e4b4-47eb-a87c-7904b764e110">
 
 <img width="1144" alt="Screenshot 2024-11-02 at 5 24 46 PM" src="https://github.com/user-attachments/assets/a810d201-894d-4af2-ba7e-1acd0103b3c2">
 
-- There is currently no traffic happening so let's establish some by pinging our fellow Linux VM.
+Establishing Network Traffic
 
-- Head back to Microsoft Azure, and click the previously created Linux VM and scroll down to find its private IP address
+- Currently, there is no network traffic being captured. To generate traffic, we will ping our Linux virtual machine (VM).
 
+- Navigate back to Microsoft Azure, select the previously created Linux VM, and scroll down to locate its private IP address
 
 <img width="941" alt="Screenshot 2024-11-02 at 5 42 28 PM" src="https://github.com/user-attachments/assets/f4740242-44a2-4916-9fd8-9ec4619fdb59">
 
-- We will now ping our Linux VM.
+- Next, we will ping our Linux virtual machine (VM).
 
-- Open the bottom left and open powershell.
+- Click on the Start menu at the bottom left and open PowerShell.
 
-- Once opened type ping and paste the Linux VMs private IP.
+- In PowerShell, type ping followed by the Linux VM's private IP address.
 
-- In WireShark you should see, the ICMP traffic between the Windows VM and the Linux VM
+- In Wireshark, you should see the ICMP traffic between the Windows VM and the Linux VM, displaying four requests and four replies.
   
 <img width="1800" alt="Screenshot 2024-11-02 at 5 45 50 PM" src="https://github.com/user-attachments/assets/76c71ad6-f7c4-4c23-8692-562ebf19cdfe">
 
