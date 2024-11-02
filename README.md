@@ -182,14 +182,26 @@ Configuing a firewall
 
 - We head back to our Azure portal, click into our Linux VM
 
-- On the left colum you should see networking-> Network settings and once in there you should find the "Network Security Group" which is the firewall for your VM, click it
+- On the left colum you should see networking-> Network settings and once in there you should find the "Network Security Group" which is the firewall for your VM, click it.
+
 
 <img width="816" alt="Screenshot 2024-11-02 at 6 29 19 PM" src="https://github.com/user-attachments/assets/92e3f8e2-01c5-4237-a22c-6d304e70b33d">
 
 <img width="866" alt="Screenshot 2024-11-02 at 6 31 18 PM" src="https://github.com/user-attachments/assets/a2f1557b-394f-4146-841f-34e9a800bf80">
 
+- In the left colum you'll see "Inbound security rules" so we will be creating a rule for inbound traffic. By clicking the top of the page "add" buttom 
+
 <img width="1008" alt="Screenshot 2024-11-02 at 6 32 59 PM" src="https://github.com/user-attachments/assets/bae5710d-152d-4f22-bf26-21ad5f819e5d">
 
+<img width="841" alt="Screenshot 2024-11-02 at 6 37 22 PM" src="https://github.com/user-attachments/assets/bb0805d7-e28d-4fda-a698-c3cb54d681fa">
+- Copy what i have here coulum by coulum. 
+  1. Have any for the source as we want to stop ICMP from any source 
+  2. Source port with an * cause that means any port
+  3. leave destination and service as is
+  4. We want to block icmp traffic so we'll click Icmp4
+  5. For action we want to deny the action
+  6. we have priority set to 290 so it goes above the previous rules. 
+<img width="578" alt="Screenshot 2024-11-02 at 6 38 09 PM" src="https://github.com/user-attachments/assets/cbd51e5e-ee72-4357-a9df-77e61879c9b3">
 
 </p>
 <br />
