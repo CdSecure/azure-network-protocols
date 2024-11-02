@@ -152,7 +152,10 @@ Observe ICMP Traffic
 
 - There is currently no traffic happening so let's establish some by pinging our fellow Linux VM.
 
-- Head over to 
+- Head back to Microsoft Azure, and click the previously created Linux VM and scroll down to find its private IP address
+
+
+<img width="941" alt="Screenshot 2024-11-02 at 5 42 28 PM" src="https://github.com/user-attachments/assets/f4740242-44a2-4916-9fd8-9ec4619fdb59">
 
 </p>
 <p>
