@@ -120,7 +120,7 @@ Connect to Your Virtual Machine:
 
 <img width="473" alt="Screenshot 2024-11-01 at 2 32 51 PM" src="https://github.com/user-attachments/assets/354ff187-3ca9-41da-9257-7613304f22b0">
 
-Observe ICMP Traffic
+Installing WireShark
 
 - Both virtual machines (VMs) have been successfully installed, and the Windows VM is connected via Microsoft Remote Desktop Protocol (RDP).
   
@@ -138,7 +138,21 @@ Observe ICMP Traffic
 
 <img width="757" alt="Screenshot 2024-11-01 at 3 04 50 PM" src="https://github.com/user-attachments/assets/eaf8bcde-73fb-4010-bc03-9114e9eba1e1">
 
+Observe ICMP Traffic
 
+- Now that it's open, click on Ethernet then the fin on the top right.
+
+- Once opend you'll see all types of traffic and this is just the background traffic happenging behind the Windows VM
+
+- We only want to observe ICMP traffic though, so on the top search bar type in ICMP and click enter.
+
+<img width="1124" alt="Screenshot 2024-11-02 at 5 04 26 PM" src="https://github.com/user-attachments/assets/6d0b1843-e4b4-47eb-a87c-7904b764e110">
+
+<img width="1144" alt="Screenshot 2024-11-02 at 5 24 46 PM" src="https://github.com/user-attachments/assets/a810d201-894d-4af2-ba7e-1acd0103b3c2">
+
+- There is currently no traffic happening so let's establish some by pinging our fellow Linux VM.
+
+- Head over to 
 
 </p>
 <p>
