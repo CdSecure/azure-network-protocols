@@ -221,6 +221,19 @@ Configuring the Inbound Security Rule
 
 <img width="1800" alt="Screenshot 2024-11-02 at 6 46 49 PM" src="https://github.com/user-attachments/assets/5adc9c35-5edb-417f-8b38-26bd8a3553a4">
 
+- We have just observed how ICMP traffic goes through Windows VM and Linux VM, We have blocked that traffic as well.
+
+- We will now re-enable that traffic by removing the rule we made.
+
+- We can just click delete 
+
+- Once deleted you can head back to the Windows VM and see the traffic begin to flow again.
+
+- To completely stop the ping press control C
+
+<img width="927" alt="Screenshot 2024-11-02 at 6 56 11 PM" src="https://github.com/user-attachments/assets/483a329b-f01d-4269-b5cc-e04983c8a6a0">
+
+<img width="1800" alt="Screenshot 2024-11-02 at 6 58 05 PM" src="https://github.com/user-attachments/assets/74841868-ad81-413d-9ba4-6c41a4db5db2">
 
 </p>
 <br />
