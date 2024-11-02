@@ -157,6 +157,16 @@ Observe ICMP Traffic
 
 <img width="941" alt="Screenshot 2024-11-02 at 5 42 28 PM" src="https://github.com/user-attachments/assets/f4740242-44a2-4916-9fd8-9ec4619fdb59">
 
+- We will now ping our Linux VM.
+
+- Open the bottom left and open powershell.
+
+- Once opened type ping and paste the Linux VMs private IP.
+
+- In WireShark you should see, the ICMP traffic between the Windows VM and the Linux VM
+  
+<img width="1800" alt="Screenshot 2024-11-02 at 5 45 50 PM" src="https://github.com/user-attachments/assets/76c71ad6-f7c4-4c23-8692-562ebf19cdfe">
+
 </p>
 <p>
 
