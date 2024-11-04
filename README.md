@@ -257,6 +257,23 @@ Completing the SSH Connection
 
 <img width="1800" alt="Screenshot 2024-11-04 at 2 05 01 PM" src="https://github.com/user-attachments/assets/1bd9bd66-c3fa-44c5-bff6-bde96bb599d4">
 
+Observing DHCP Traffic
+
+- We will now observe DHCP traffic. The DHCP server allows the computer to obtain an IP address, enabling it to connect to the network.
+
+- In Wireshark, filter for DHCP traffic by typing "DHCP" into the search bar at the top.
+
+- To generate DHCP traffic, open PowerShell as an administrator by right-clicking and selecting "Run as administrator." Type ipconfig /renew, which will cause the computer (VM) to release its IP address and broadcast a request for a new one.
+
+- You will notice your VM temporarily disconnect and then reconnect as it releases and renews its IP address.
+
+- In the background, you can observe the computer sending a request and the DHCP server acknowledging that request.
+
+- <img width="1800" alt="Screenshot 2024-11-04 at 3 31 54 PM" src="https://github.com/user-attachments/assets/d1d41ed5-4b36-426b-8de8-188f6b1c0466">
+
+- We will now observe DNS traffic, 
+
+
 </p>
 <br />
 
