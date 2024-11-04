@@ -271,16 +271,30 @@ Observing DHCP Traffic
 
 - <img width="1800" alt="Screenshot 2024-11-04 at 3 31 54 PM" src="https://github.com/user-attachments/assets/d1d41ed5-4b36-426b-8de8-188f6b1c0466">
 
-- We will now observe DNS traffic, 
+Observing DNS Traffic
 
+- We will now observe DNS traffic. In Wireshark, filter for DNS by typing "DNS" into the search bar.
 
-</p>
-<br />
+- You may already see a lot of DNS traffic occurring, but let's generate our own.
 
-<p>
+- Restart the traffic capture, and in PowerShell, type nslookup disney.com to retrieve the public IP address of disney.com.
 
-</p>
-<p>
+- The computer will reach out to the DNS server to resolve the IP address associated with disney.com.
 
-</p>
-<br />
+- After executing nslookup disney.com, you should receive output similar to the following.
+
+<img width="1800" alt="Screenshot 2024-11-04 at 4 08 46 PM" src="https://github.com/user-attachments/assets/bc342073-0ed0-4126-b2ed-5331fb5dcd51">
+
+Observing RDP Traffic
+
+- We will now observe Remote Desktop Protocol (RDP) traffic. In Wireshark, filter for RDP by typing tcp.port == 3389 in the search bar and pressing Enter.
+
+- RDP, or Remote Desktop Protocol, is what we are currently using to connect to the Windows server from a Mac, and it operates on port 3389.
+
+- Once you have applied the RDP filter, you will see a constant stream of traffic. This is because the RDP server is continuously maintaining a connection between our computer and the server to run the virtual machine.
+
+<img width="1800" alt="Screenshot 2024-11-04 at 4 21 42 PM" src="https://github.com/user-attachments/assets/8d1c6f82-f14f-4bbb-b293-45e1e0189f82">
+
+ What we learned
+
+- Throughout this exercise, we explored how to observe network traffic between Windows and Linux systems using Wireshark on a Windows virtual machine connected via Remote Desktop Protocol (RDP). By generating and analyzing traffic for various protocols—such as SSH (Secure Shell) when connecting to the Linux VM, RDP for remote desktop connections, DHCP for IP address assignment, DNS for domain name resolution, and ICMP for network connectivity testing—we gained practical insights into how these protocols operate and how their data packets appear in a packet analyzer. This hands-on experience enhanced our understanding of network communications and the behavior of different protocols within a virtualized environment.
