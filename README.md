@@ -235,6 +235,25 @@ Configuring the Inbound Security Rule
 
 <img width="1800" alt="Screenshot 2024-11-02 at 6 58 05 PM" src="https://github.com/user-attachments/assets/74841868-ad81-413d-9ba4-6c41a4db5db2">
 
+Filtering SSH Traffic
+
+- We will now filter for SSH traffic. Return to Wireshark, type "SSH" in the search bar, and press Enter.
+
+- SSH (Secure Shell) enables a secure connection between two computers. We will connect to our Linux VM from the Windows VM to observe the SSH traffic.
+
+- To connect to the Linux VM, open PowerShell and type ssh @username followed by the private IP address (replace username with the Linux VM's username). You will receive a prompt asking if you want to continue connecting; type "yes". It should appear similar to the example below.
+
+<img width="1800" alt="Screenshot 2024-11-04 at 2 02 47 PM" src="https://github.com/user-attachments/assets/21dc3fb8-d944-4631-9115-9430810ac579">
+
+- You will get a message to type in the password of the Linux user, it will be invisable but once you type it and hit enter you should see below.
+
+- This now means we are connected to the Linux machine via the windows machine
+
+- If you type host name, you'll see the Linux VMs hostname, and in the background you can the data packets being updated.
+
+  
+<img width="1800" alt="Screenshot 2024-11-04 at 2 05 01 PM" src="https://github.com/user-attachments/assets/1bd9bd66-c3fa-44c5-bff6-bde96bb599d4">
+
 </p>
 <br />
 
