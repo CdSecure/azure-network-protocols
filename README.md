@@ -245,13 +245,16 @@ Filtering SSH Traffic
 
 <img width="1800" alt="Screenshot 2024-11-04 at 2 02 47 PM" src="https://github.com/user-attachments/assets/21dc3fb8-d944-4631-9115-9430810ac579">
 
-- You will get a message to type in the password of the Linux user, it will be invisable but once you type it and hit enter you should see below.
+Completing the SSH Connection
 
-- This now means we are connected to the Linux machine via the windows machine
+- You will be prompted to enter the password for the Linux user account. Although the password input will be invisible, type it and press Enter.
 
-- If you type host name, you'll see the Linux VMs hostname, and in the background you can the data packets being updated.
+- This confirms that you are now connected to the Linux machine via the Windows machine.
 
-  
+- By typing hostname, you will see the Linux VM's hostname, and in the background, you can observe the data packets being updated.
+
+- After observing the SSH traffic, to disconnect from the Linux VM, type exit in the terminal. This will close the SSH connection.
+
 <img width="1800" alt="Screenshot 2024-11-04 at 2 05 01 PM" src="https://github.com/user-attachments/assets/1bd9bd66-c3fa-44c5-bff6-bde96bb599d4">
 
 </p>
